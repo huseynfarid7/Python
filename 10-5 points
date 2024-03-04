@@ -1,0 +1,64 @@
+# 0 ve 3 arasinda ededi ardicilliq yaratmaq,range funksiyasi
+numbers = range(4)
+for i in numbers:
+ print(i)
+
+# range funksiyasi 2 parametrli
+# numbers from 2 to 4 (5 daxildeyil)
+numbers = range(2, 5)
+print(list(numbers))
+
+# numbers from -2 to 3 (4 daxildeyil)
+numbers = range(-2, 4)
+print(list(numbers))
+
+
+# range funksiyasi 3 parametrli
+# 2 ve 10 ededleriaralighindaededlerin 3 vahidartmaghi
+numbers = range(2, 10, 3)
+print(list(numbers))
+
+# 4 ve -1 ededleri araliginda ededlerin 1 vahid azalmagi
+numbers = range(4, -1, -1)
+print(list(numbers))
+
+# numbers from 1 to 4 with increment of 1
+# range(0, 5, 1) is equivalent to range(5)
+numbers = range(0, 5, 1)
+print(list(numbers))
+
+
+#dövrün 5 dəfə təkrarlanması nümunəsi:
+for i in range(5):
+ print(i, 'kod')
+
+########################################################################################################################
+
+# sert operatoru
+eded1=int(input("1ci ededi daxil edin: "))
+eded2=int(input("2ci ededi daxil edin: "))
+if eded1>eded2:
+    print(eded2,eded1)
+else:
+    print(eded1,eded2)
+
+
+# sert operatoru 1
+a=-10
+if  a<-10:
+  if a==0:
+    print("Verilmis eded sıfırdır")
+  else:
+    print("Verilmis eded menfi ededdir")
+else:
+    print("Verilmis eded musbetdir ")
+
+# sert operatoru 2
+a=64
+if a<50:
+ if a%2==0:
+   print("eded cutdur")
+ else:
+   print("eded tekdir")
+else:
+   print("eded 50-den boyukdur")
